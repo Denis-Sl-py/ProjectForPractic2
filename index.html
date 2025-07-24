@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Простой слайдер (vanilla JS)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Простой слайдер изображений</h1>
+
+    <div class="slider" role="region" aria-label="Слайдер изображений">
+      <div class="slider__viewport">
+        <img class="slider__image" id="slider-image" src="" alt="Слайд" />
+      </div>
+
+      <div class="slider__controls">
+        <button id="prev" class="btn" aria-label="Предыдущее изображение">← Назад</button>
+        <span id="counter" aria-live="polite" class="counter"></span>
+        <button id="next" class="btn" aria-label="Следующее изображение">Вперёд →</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="slider.js"></script>
+</body>
+</html>
